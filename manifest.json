@@ -1,0 +1,14 @@
+{
+  "name": "SADIQ TECH {STECH}",
+  "short_name": "STECH",
+  "start_url": "/index.html",
+  "theme_color": "#107bc2",
+  "background_color": "#154564",
+  "display": "standalone",
+  "icons": [{
+    "src": "./showcase/profile.png",
+    "sizes": "150×150",
+    "type": "image/png"
+  }
+  ]
+}

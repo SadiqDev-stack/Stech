@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./showcase/profile.png" type="image/x-icon" />
+  <link rel="manifest" href="/manifest.json">
+  <meta rel="theme" content="#107bc2" >
+  <title>Stech</title>
+  <style>
+    html ,body,.body{
+      overflow: hidden;
+      overflow-y: scroll;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body ,.body{
+      
+          text-transform: capitalize;
+      width: 100vw;
+      height: 100vh;
+      
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      background-image: linear-gradient(130deg, #154564 50%, #107bc2);
+      text-transform: capitalize;
+      
+    }
+    
+    
+    
+    /* default */ 
+    img{
+      width: 20%;
+    }
+    
+     .card{
+      width: 90%;
+      min-height: 400px;
+      border: none;
+      border-radius: 1rem;
+      background: transparent;
+      backdrop-filter: blur(5px);
+      align-items: center;
+      padding: 1rem;
+      justify-content: center;
+      
+    }
+    
+    input,textarea,select ,button{
+  width: 90%;
+  border: none;
+  border-radius: .5rem;
+  background: white;
+  color: black;
+  padding: 1rem;
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  color: #32FBFF;
+}
+textarea{
+   width: 80%;
+   font-family: Arial, Helvetica, sans-serif
+ }
+ 
+ .complete{
+   background: #56FF96;
+ }
+ 
+ .block{
+   border: 1px solid #093048;
+ }
+ 
+ .profile{
+   width: 150px;
+   border-radius: 50%;
+   height: 150px;
+   border: 2px solid white;
+   margin: 1rem;
+ }
+ 
+ .detail{
+   margin: 1rem 0
+ }
+ 
+ 
+video,img{
+  width: 95%;
+  height: 200px;
+  border-radius: .5rem;
+  align-self: center;
+}
+
+.wrapper{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  padding: 1rem;
+  row-gap: 2rem;
+  animation: null .5s .2s forwards linear;
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+h2,h3{
+  margin: 0 .5rem;
+  color: #45FFEC;
+
+}
+
+.phone{
+  height: 500px;
+}
+
+input,textarea{
+  align-self: center;
+  margin: 1.5rem 0
+}
+
+.submit{
+  background: #45FFEC;
+}
+
+hr{
+  width: 90%;
+  margin: 1rem 0;
+}
+
+
+   @keyframes popin{
+      to{
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    
+    @keyframes popout{
+      to{
+        opacity: 0;
+        transform: translateY(20%);
+      }
+    }
+    footer{
+      align-self: flex-start;
+    }
+    
+    footer .copyright{
+      margin: 2rem 
+    }
+
+@media (min-width: 600px){
+  main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  
+}
+
+
+  </style>
+</head>
+
+<body>
+
+ <img class="profile" src="./showcase/profile.png" alt="">
+ <main>
+   <div class="wrapper">
+   <div class="detail">Hello my name is sadiq abubakar wellcome to my website ,
+   i call this stech because i am sadiq and i like tech</div>
+   <h3>What i do</h3>
+   <div class="detail">i am someone with interest in tech and programming, i like coding website full stack apps, making electromechanical systems and more to simplify human task</div>
+   <h3>Why creating this</h3>
+   <div class="detail">i create this to showcase my skills to diffirent peoples who can help me archieve my dreams by providing good resources and i promise to make our country to shine</div>
+   
+   </div>
+   <h2>My Projects</h2><br>
+   <h3>Electromechanical Projects</h3>
+   <div class="wrapper">
+     <h4>Water Level Indicator</h4>
+     <video controls class="phone"  src="./showcase/level_indicator.mp4"></video>
+     when dams and tanks full they dont automatically off, so i try and create this which can indicate sings and you can also make it even cut the flow with resources
+   </div>
+  
+   <div class="wrapper">
+     <h4>Water pump</h4>
+     <img src="./showcase/pump.png" alt="">
+     i create this water pump when i saw scarcity of water and pump is so expensive that farmers cant buy, it even requires generator 
+     but this one is dc and it operate with low voltage you can use your car battery or solar panel to power it, 
+     the picture is sample is small, we will build large with access to resources
+   </div>
+   <div class="wrapper">
+     <h4>Excavator</h4>
+     <img src="./showcase/escavator.png" alt="">
+     this is one of my great project this excavator allow contructors to easily carry things with hand, this one is dc powered and requires low volatge to operate 
+     when the big one is maked no need to spend money buying from others
+   </div>
+   <div class="wrapper">
+     <h4>ac motor</h4>
+     <img src="./showcase/ac_motor.png" alt="">
+     this is ac motor also called alternating current motor it is used inside generators to generate ac electricity, 
+     we can produce this in our country to make things cheap
+   </div>
+   <div class="wrapper">
+     <h4>Walking Car</h4>
+     <video constrols src="./showcase/walking_car.mp4"></video>
+     this is walking car , it is fun project but it show possibilities that we can produce e cars at our hoke country no need to buy from others
+   </div>
+   <div class="wrapper">
+     <h4>Electric Lamp</h4>
+     <img src="./showcase/lamp.png" alt="">
+     this is electric lamp this can stay for many hours suitable for reading and portable
+   </div>
+   <div class="wrapper">
+     <h4>All Electromechanical Projects</h4>
+     <img class="phone" src="./showcase/all.png" alt="">
+     this are all my electronics and mechanical project , there are many i have which i dont take there stream, this include
+     petrol to gas converter, simple solar powered irrigation system, electric boat ⛵, fans and other mini projects
+   </div>
+   <h2>Programming Projects</h2> 
+   <div class="wrapper">
+     <h4>Whether App</h4>
+     <img class="phone" src="./showcase/weather.png" alt="">
+     this whether app allow users to viee whether of there city by jsut searching or it automatically detect using 
+     position(longitude latitude), this app has get all temperatures, humidity wind direction and more data
+     <a href=""></a>
+   </div>
+   <div class="wrapper">
+     <h4>Quiz App</h4>
+     <img class="phone" src="./showcase/quiz.png" alt="">
+     this allow student from diffirent grade and level to take quiz and test themselves on various aspect 
+     and subjects for free anytime
+   </div>
+   <div class="wrapper">
+     <h4>Space Game</h4>
+     <img class="phone" src="./showcase/game.png" alt="">
+     this allow peoples to play and enjoy on there free time this game contain about 5 rounds at 6 round you will defeat boss, this game is written in javascript and is fast 
+     depending on ram 
+   </div>
+   <div class="wrapper">
+     <h4>Image Generator</h4>
+    <img class="phone" src="./showcase/image.png" alt="">
+    this allow us to get images for our walpappers and so on, you can get random pictures for free anytime you want
+   </div>
+   <div class="wrapper">
+     <h4>All programming project</h4>
+     <img class="phone" src="./showcase/coding.png" alt="">
+     actually i use phone which is slow and set back for me, but i continue struggling hoping one day 😔, 
+     here are other projects i build with coding 
+     <br><br>
+
+ <summary>
+calculator app: 
+https://calculator-app-brown-nine.vercel.app/
+<br><br>
+qoute generator :
+https://quote-generator-dun-nine.vercel.app/
+<br><br>
+rock paper scissors game:
+https://rock-paper-scissors-game-neon.vercel.app/
+<br><br>
+Todo list app: 
+https://to-do-list-app-one-dun.vercel.app/
+<br><br>
+all this I do them using only HTML CSS and JavaScript no any framework or library and with phone not pc 🥰🥰🥰
+ </summary>
+     </div>
+    
+     <div class="wrapper">
+       <h2>Upcoming</h2>
+       <img class="phone" src="./showcase/snet.png" alt=""> 
+     before am i learn electromechanical, since at 2024  i start to concentrate in programming because resouces needed are 
+      not much, i can use phone, so now am full stack developer currently building something large and practicing my skill 
+      now am working on snet a new social media app , i think this is great and big project that when supported it make our 
+      country shine in front of others and it bring values by monetizing it 
+       <video controls  class="phone" src="./showcase/snet.mp4"></video>
+     </div>
+     
+     <div class="wrapper">
+       <h2>Your feedback</h2>
+       <div class="detail">
+         thank you for taking your time going through my website i will expect your feedback, this is sent to my email directly and i will reach you out 
+       
+           <input placeholder="Enter Your Phone Number" type="number">
+           <textarea placeholder="Your Message..." type="text"></textarea>
+           <button class="submit">Submit</button>
+       </div>
+     </div>
+     <div class="wrapper">
+       <h2>What I Want to study</h2>
+       <img src="./showcase/career.png" alt="">
+       actually am someone's with interest in both programming and electronics, 
+       i like to make circuit from scratch programm them and deploy them to control or automate system eg 
+       autonomous vehicles , ai , robots etc, so my best course is mechatronics engineering , but this isnt available
+       in under developed country like nigeria so i decided to choose <b>Computer engineering </b> which is also great alternative
+     </div>
+     <div class="wrapper">
+       <h2>Donation</h2>
+       your donation will really help, me , you can send me little as you want , i will appreciate it sir/mr <br><br>
+       <b>Account Number: 8145742404</b><br>
+       <b>Account Name: Abubakar Muhammad</b><br>
+       <b>Bank Name: Opay</b>
+     </div>
+     
+ </main>
+ <br><br>
+ <footer>
+   <div class="wrapper">
+     <h3>Contacts</h3>
+     <br>
+     you can reach us below 
+     <a href="https://wa.me/08145742404">On WhatsApp</a>
+     <a href="tel:08145742404">Call Us</a>
+   </div>
+   <div class="copyright">
+     Stech @2025 Copyright
+   </div>
+ </footer>
+
+  
+  
+  <script>
+    const $ = ele => ele.includes('*') ?
+  document.querySelectorAll(ele.replace('*', '')) :
+  document.querySelector(ele);
+    const wrappers = $('*.wrapper');
+    
+
+ const inView = element => {
+   const rects = element.getBoundingClientRect();
+   return (rects.y  <= innerHeight && rects.y + rects.height >= 0 && rects.x + rects.width >= 0 && rects.x <= innerWidth)
+ }
+ 
+ 
+ const handlePoping = () => {
+   wrappers.forEach(wrapper => {
+     const video = wrapper.querySelector("video");
+ 
+       if(inView(wrapper)){
+      wrapper.style.animationName = "popin" 
+    
+     if(video) video.play()
+         }else{
+         wrapper.style.animationName = "popout" 
+  if(video) video.pause()
+       }
+     }
+   )
+ }
+ 
+ document.body.addEventListener("scroll", handlePoping)
+ 
+ handlePoping()
+ 
+ // for email
+ let phone;
+ let message;
+ const phoneInput = $('input');
+ const textarea = $('textarea');
+ const submitButton = $('.submit')
+ phoneInput.oninput = () => {
+    phone = phoneInput.value.trim();
+   }
+ textarea.oninput = () => {
+   message = textarea.value.trim()
+ }
+ 
+ submitButton.onclick = () => {
+    if(!phone || !message){
+      alert("cannot submit empty phone or message")
+    }else{
+      const endpoint = "";
+      fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({phone,message})
+      }
+      ).then(res => res.json())
+      .then(data => {
+        alert("We Have Received Your Message Thank You For Submitting")
+      }).catch(() => {
+        alert("Error Submitting Message, Check Your Connection Or Contact Help")
+      })
+      
+    }
+   }
+ 
+ // service worker 
+ navigator.serviceWorker.register("/worker.js")
+ .then(console.log)
+    
+  </script>
+</body>
+
+</html>
