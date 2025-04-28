@@ -113,7 +113,7 @@ video,img{
 h2,h3{
   margin: 0 .5rem;
   color: #45FFEC;
-
+  display: inline-block;
 }
 
 .phone{
@@ -184,12 +184,7 @@ hr{
    </div>
    <h2>My Projects</h2><br>
    <h3>Electromechanical Projects</h3>
-   <div class="wrapper">
-     <h4>Water Level Indicator</h4>
-     <video controls class="phone"  src="./showcase/level_indicator.mp4"></video>
-     when dams and tanks full they dont automatically off, so i try and create this which can indicate sings and you can also make it even cut the flow with resources
-   </div>
-  
+
    <div class="wrapper">
      <h4>Water pump</h4>
      <img src="./showcase/pump.png" alt="">
@@ -219,36 +214,47 @@ hr{
      <img src="./showcase/lamp.png" alt="">
      this is electric lamp this can stay for many hours suitable for reading and portable
    </div>
+      <div class="wrapper">
+     <h4>Water Level Indicator</h4>
+     <video controls class="phone" src="./showcase/level_indicator.mp4"></video>
+     when dams and tanks full they dont automatically off, so i try and create this which can indicate sings and you can also make it even cut the flow with resources
+   </div>
    <div class="wrapper">
      <h4>All Electromechanical Projects</h4>
      <img class="phone" src="./showcase/all.png" alt="">
      this are all my electronics and mechanical project , there are many i have which i dont take there stream, this include
      petrol to gas converter, simple solar powered irrigation system, electric boat ⛵, fans and other mini projects
    </div>
+   
+  
+   
    <h2>Programming Projects</h2> 
    <div class="wrapper">
      <h4>Whether App</h4>
      <img class="phone" src="./showcase/weather.png" alt="">
      this whether app allow users to viee whether of there city by jsut searching or it automatically detect using 
      position(longitude latitude), this app has get all temperatures, humidity wind direction and more data
-     <a href=""></a>
+     <a href="https://sadiqdev-stack.github.io/Weather-App/">view app</a>
    </div>
    <div class="wrapper">
      <h4>Quiz App</h4>
      <img class="phone" src="./showcase/quiz.png" alt="">
      this allow student from diffirent grade and level to take quiz and test themselves on various aspect 
-     and subjects for free anytime
+     and subjects for free anytime 
+     <a href="https://quiz-app-tau-blue.vercel.app/">view app</a>
    </div>
    <div class="wrapper">
      <h4>Space Game</h4>
      <img class="phone" src="./showcase/game.png" alt="">
      this allow peoples to play and enjoy on there free time this game contain about 5 rounds at 6 round you will defeat boss, this game is written in javascript and is fast 
      depending on ram 
+     <a href="https://space-shooter-game-psi.vercel.app/">view app</a>
    </div>
    <div class="wrapper">
      <h4>Image Generator</h4>
     <img class="phone" src="./showcase/image.png" alt="">
-    this allow us to get images for our walpappers and so on, you can get random pictures for free anytime you want
+    this allow us to get images for our walpappers and so on, you can get random pictures for free anytime you want 
+    <a href="https://sadiqdev-stack.github.io/Image-Generator-App/">view app</a>
    </div>
    <div class="wrapper">
      <h4>All programming project</h4>
@@ -258,17 +264,16 @@ hr{
      <br><br>
 
  <summary>
-calculator app: 
-https://calculator-app-brown-nine.vercel.app/
+<a href="https://calculator-app-brown-nine.vercel.app/">Calculator app</a>
 <br><br>
-qoute generator :
-https://quote-generator-dun-nine.vercel.app/
+<a href="https://quote-generator-dun-nine.vercel.app/
+">Qoute Generator</a>
 <br><br>
-rock paper scissors game:
-https://rock-paper-scissors-game-neon.vercel.app/
-<br><br>
-Todo list app: 
-https://to-do-list-app-one-dun.vercel.app/
+<a href="https://rock-paper-scissors-game-neon.vercel.app/
+">Rock Paper Scissors Game</a>
+<br>
+<a href="https://to-do-list-app-one-dun.vercel.app/
+">Todo App</a>
 <br><br>
 all this I do them using only HTML CSS and JavaScript no any framework or library and with phone not pc 🥰🥰🥰
  </summary>
@@ -291,7 +296,7 @@ all this I do them using only HTML CSS and JavaScript no any framework or librar
        
            <input placeholder="Enter Your Phone Number" type="number">
            <textarea placeholder="Your Message..." type="text"></textarea>
-           <button class="submit">Submit</button>
+           <button class="submit">Submit Message</button>
        </div>
      </div>
      <div class="wrapper">
@@ -377,7 +382,9 @@ all this I do them using only HTML CSS and JavaScript no any framework or librar
     if(!phone || !message){
       alert("cannot submit empty phone or message")
     }else{
-      const endpoint = "";
+      const endpoint = "https://formspree.io/f/xwpvbwyv";
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting Form"
       fetch(endpoint, {
         method: "POST",
         headers: {
@@ -388,6 +395,8 @@ all this I do them using only HTML CSS and JavaScript no any framework or librar
       ).then(res => res.json())
       .then(data => {
         alert("We Have Received Your Message Thank You For Submitting")
+        submitButton.disabled = false;
+      submitButton.textContent = "Submit Message"
       }).catch(() => {
         alert("Error Submitting Message, Check Your Connection Or Contact Help")
       })
@@ -402,4 +411,4 @@ all this I do them using only HTML CSS and JavaScript no any framework or librar
   </script>
 </body>
 
-</html>
+       </html>
