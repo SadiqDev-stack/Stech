@@ -1,7 +1,6 @@
 
 const cacheName = 'SADIQ TECH APP';
-const appAssets = [
-  '/showcase',
+const appAssets = {
   './showcase/profile.png',
   './showcase/pump.png',
   './showcase/ac_motor.png',
