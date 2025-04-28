@@ -1,14 +1,17 @@
+
 {
-  "name": "SADIQ TECH {STECH}",
+  "name": "Sadiq Tech {Stech}",
   "short_name": "STECH",
-  "start_url": "/index.html",
-  "theme_color": "#107bc2",
-  "background_color": "#154564",
+  "start_url": "index.html",
   "display": "standalone",
-  "icons": [{
-    "src": "./showcase/profile.png",
-    "sizes": "150×150",
-    "type": "image/png"
-  }
-  ]
+  "background_color": "#154564",
+  "theme": "#107bc2",
+  "icons": [
+    {
+      "src": "./showcase/profile.png",
+      "sizes": "400×400",
+      "type": "image/png"
+    }
+  ],
+  "description": "this app is developed by sadiq Abubakar mainly to showcase his skills in tech"
 }
