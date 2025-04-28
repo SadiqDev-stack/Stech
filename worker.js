@@ -1,6 +1,6 @@
 const cacheName = 'SADIQ TECH APP';
 const appAssets = [
-  '/showcase',
+  './showcase/icon.png',
   './showcase/profile.png',
   './showcase/pump.png',
   './showcase/ac_motor.png',
@@ -16,10 +16,11 @@ const appAssets = [
   './showcase/snet.png',
   './showcase/weather.png',
   // videos 
+  /*
   './showcase/level_indicator.mp4',
   './showcase/walking_car.mp4',
   './showcase/snet.mp4',
-  'weather.json',
+  */
   'index.html',
   'worker.js',
   'manifest.json',
