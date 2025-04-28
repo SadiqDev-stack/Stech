@@ -7,7 +7,7 @@
   "theme_color": "#107bc2",
   "icons": [
     {
-      "src": "./showcase/profile.png",
+      "src": "./showcase/icon.png",
       "sizes": "400x400",
       "type": "image/png"
     }
