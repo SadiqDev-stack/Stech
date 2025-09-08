@@ -1,424 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./showcase/icon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadiq Cyber – Self-Taught Innovator & Mechatronics Enthusiast</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Sadiq Cyber, a young Nigerian self-taught innovator passionate about coding, electronics, AI, automation, and mechatronics.">
+  <meta name="keywords" content="Sadiq Cyber, Sadiq Abubakar, developer, mechatronics, electronics, programming, automation">
+  <meta name="author" content="Sadiq Abubakar">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Sadiq Cyber – Self-Taught Innovator & Mechatronics Enthusiast">
+  <meta property="og:description" content="Explore Sadiq Cyber's journey as a young Nigerian self-taught developer building electronics, web apps, and innovative projects.">
+  <meta property="og:image" content="./showcase/profile.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://stech-phi.vercel.app">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sadiq Cyber – Self-Taught Innovator & Mechatronics Enthusiast">
+  <meta name="twitter:description" content="Follow Sadiq Cyber's journey in coding, electronics, AI, and mechatronics engineering.">
+  <meta name="twitter:image" content="./showcase/profile.png">
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="./showcase/icon.png" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
-  <meta rel="theme" content="#107bc2" >
-  <title>Stech</title>
+  <meta name="theme-color" content="#107bc2">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    html ,body,.body{
-      overflow: hidden;
-      overflow-y: scroll;
-      font-family: Arial, Helvetica, sans-serif;
+    :root {
+      --primary: #107bc2;
+      --secondary: #45FFEC;
+      --bg-gradient: linear-gradient(130deg, #154564 50%, var(--primary));
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-color: #fff;
+      --accent: #56FF96;
+      --transition: 0.3s ease-in-out;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      min-height: 100vh;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    img, video {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      
+      max-height: 450px;
     }
     
-    body ,.body{
-      
-          text-transform: capitalize;
-      width: 100vw;
-      height: 100vh;
-      
-      margin: 0;
+    video{
+      object-fit: cover;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid var(--text-color);
+      margin-top: 1rem;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadeUp 0.6s forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    section h2, section h3 {
+      color: var(--secondary);
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      border: none;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--secondary);
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background var(--transition);
+    }
+
+    form button:hover {
+      background: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    footer a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    
+    .journey{
       display: flex;
       flex-direction: column;
       align-items: center;
-      color: white;
-      background-image: linear-gradient(130deg, #154564 50%, #107bc2);
-      text-transform: capitalize;
+      row-gap: 1rem;
+      align-self: center;
+      color: #D3D3D3;
       
     }
     
     
-    
-    /* default */ 
-    img{
-      width: 20%;
-    }
-    
-     .card{
-      width: 90%;
-      min-height: 400px;
-      border: none;
-      border-radius: 1rem;
-      background: transparent;
-      backdrop-filter: blur(5px);
+    .imageSection{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      padding: 1rem;
+      row-gap: 1rem;
       justify-content: center;
+    }
+    
+    .images{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: .5rem;
+      row-gap: 1rem;
+      width: 100%;
+    }
+    
+    .images img{
+      max-height: 250px;
+      width: 100%;
+    }
+
+    @media(min-width: 768px){
+      main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    grid-auto-flow: dense;
+      }
       
-    }
-    
-    input,textarea,select ,button{
-  width: 90%;
-  border: none;
-  border-radius: .5rem;
-  background: white;
-  color: black;
-  padding: 1rem;
-  outline: none;
-}
+      .images img{
+        max-height: 350px;
+      }
 
-a{
-  text-decoration: none;
-  color: #32FBFF;
-}
-textarea{
-   width: 80%;
-   font-family: Arial, Helvetica, sans-serif
- }
- 
- .complete{
-   background: #56FF96;
- }
- 
- .block{
-   border: 1px solid #093048;
- }
- 
- .profile{
-   width: 150px;
-   border-radius: 50%;
-   height: 150px;
-   border: 2px solid white;
-   margin: 1rem;
- }
- 
- .detail{
-   margin: 1rem 0
- }
- 
- 
-video,img{
-  width: 95%;
-  height: 200px;
-  border-radius: .5rem;
-  align-self: center;
-}
-
-.wrapper{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
-  padding: 1rem;
-  row-gap: 2rem;
-  animation: null .5s .2s forwards linear;
-  opacity: 0;
-  transform: translateY(20%);
-}
-
-h2,h3{
-  margin: 0 .5rem;
-  color: #45FFEC;
-  display: inline-block;
-}
-
-.phone{
-  height: 500px;
-}
-
-input,textarea{
-  align-self: center;
-  margin: 1.5rem 0
-}
-
-.submit{
-  background: #45FFEC;
-}
-
-hr{
-  width: 90%;
-  margin: 1rem 0;
-}
-
-
-   @keyframes popin{
-      to{
+      section {
         opacity: 1;
-        transform: translateY(0%);
+        transform: none;
+      }
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
     
-    @keyframes popout{
-      to{
-        opacity: 0;
-        transform: translateY(20%);
-      }
-    }
-    footer{
-      align-self: flex-start;
-    }
     
-    footer .copyright{
-      margin: 2rem 
-    }
-
-@media (min-width: 600px){
-  main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  
-}
-
-
   </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFTBJ8LPZ5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LFTBJ8LPZ5');
-</script>
-
 <body>
 
- <img class="profile" src="./showcase/profile.png" alt="">
- <main>
-   <div class="wrapper">
-   <div class="detail">Hello my name is sadiq abubakar wellcome to my website ,
-   i call this stech because i am sadiq and i like tech</div>
-   <h3>What i do</h3>
-   <div class="detail">i am someone with interest in tech and programming, i like coding website full stack apps, making electromechanical systems and more to simplify human task</div>
-   <h3>Why creating this</h3>
-   <div class="detail">i create this to showcase my skills to diffirent peoples who can help me archieve my dreams by providing good resources and i promise to make our country to shine</div>
-   
-   </div>
-   <h2>My Projects</h2><br>
-   <h3>Electromechanical Projects</h3>
+  <header>
+    <h1>Sadiq Cyber</h1>
+    <img class="profile" src="./showcase/profile.png" alt="Sadiq Cyber Profile Picture">
+  </header>
 
-   <div class="wrapper">
-     <h4>Water pump</h4>
-     <img src="./showcase/pump.png" alt="">
-     i create this water pump when i saw scarcity of water and pump is so expensive that farmers cant buy, it even requires generator 
-     but this one is dc and it operate with low voltage you can use your car battery or solar panel to power it, 
-     the picture is sample is small, we will build large with access to resources
-   </div>
-   <div class="wrapper">
-     <h4>Excavator</h4>
-     <img src="./showcase/escavator.png" alt="">
-     this is one of my great project this excavator allow contructors to easily carry things with hand, this one is dc powered and requires low volatge to operate 
-     when the big one is maked no need to spend money buying from others
-   </div>
-   <div class="wrapper">
-     <h4>ac motor</h4>
-     <img src="./showcase/ac_motor.png" alt="">
-     this is ac motor also called alternating current motor it is used inside generators to generate ac electricity, 
-     we can produce this in our country to make things cheap
-   </div>
-   <div class="wrapper">
-     <h4>Walking Car</h4>
-     <video controls src="./showcase/walking_car.mp4"></video>
-     this is walking car , it is fun project but it show possibilities that we can produce e cars at our hoke country no need to buy from others
-   </div>
-   <div class="wrapper">
-     <h4>Electric Lamp</h4>
-     <img src="./showcase/lamp.png" alt="">
-     this is electric lamp this can stay for many hours suitable for reading and portable
-   </div>
-      <div class="wrapper">
-     <h4>Water Level Indicator</h4>
-     <video controls class="phone" src="./showcase/level_indicator.mp4"></video>
-     when dams and tanks full they dont automatically off, so i try and create this which can indicate sings and you can also make it even cut the flow with resources
-   </div>
-   <div class="wrapper">
-     <h4>All Electromechanical Projects</h4>
-     <img class="phone" src="./showcase/all.png" alt="">
-     this are all my electronics and mechanical project , there are many i have which i dont take there stream, this include
-     petrol to gas converter, simple solar powered irrigation system, electric boat ⛵, fans and other mini projects
-   </div>
-   
-  
-   
-   <h2>Programming Projects</h2> 
-   <div class="wrapper">
-     <h4>Whether App</h4>
-     <img class="phone" src="./showcase/weather.png" alt="">
-     this whether app allow users to viee whether of there city by jsut searching or it automatically detect using 
-     position(longitude latitude), this app has get all temperatures, humidity wind direction and more data
-     <a href="https://sadiqdev-stack.github.io/Weather-App/">view app</a>
-   </div>
-   <div class="wrapper">
-     <h4>Quiz App</h4>
-     <img class="phone" src="./showcase/quiz.png" alt="">
-     this allow student from diffirent grade and level to take quiz and test themselves on various aspect 
-     and subjects for free anytime 
-     <a href="https://quiz-app-tau-blue.vercel.app/">view app</a>
-   </div>
-   <div class="wrapper">
-     <h4>Space Game</h4>
-     <img class="phone" src="./showcase/game.png" alt="">
-     this allow peoples to play and enjoy on there free time this game contain about 5 rounds at 6 round you will defeat boss, this game is written in javascript and is fast 
-     depending on ram 
-     <a href="https://space-shooter-game-psi.vercel.app/">view app</a>
-   </div>
-   <div class="wrapper">
-     <h4>Image Generator</h4>
-    <img class="phone" src="./showcase/image.png" alt="">
-    this allow us to get images for our walpappers and so on, you can get random pictures for free anytime you want 
-    <a href="https://sadiqdev-stack.github.io/Image-Generator-App/">view app</a>
-   </div>
-   <div class="wrapper">
-     <h4>All programming project</h4>
-     <img class="phone" src="./showcase/coding.png" alt="">
-     actually i use phone which is slow and set back for me, but i continue struggling hoping one day 😔, 
-     here are other projects i build with coding 
-     <br><br>
-
- <summary>
-<a href="https://calculator-app-brown-nine.vercel.app/">Calculator app</a>
-<br><br>
-<a href="https://quote-generator-dun-nine.vercel.app/
-">Qoute Generator</a>
-<br><br>
-<a href="https://rock-paper-scissors-game-neon.vercel.app/
-">Rock Paper Scissors Game</a>
-<br>
-<a href="https://to-do-list-app-one-dun.vercel.app/
-">Todo App</a>
-<br><br>
-all this I do them using only HTML CSS and JavaScript no any framework or library and with phone not pc 🥰🥰🥰
- </summary>
-     </div>
-    
-     <div class="wrapper">
-       <h2>Upcoming</h2>
-       <img class="phone" src="./showcase/snet.png" alt=""> 
-     before am i learn electromechanical, since at 2024  i start to concentrate in programming because resouces needed are 
-      not much, i can use phone, so now am full stack developer currently building something large and practicing my skill 
-      now am working on snet a new social media app , i think this is great and big project that when supported it make our 
-      country shine in front of others and it bring values by monetizing it 
-       <video controls  class="phone" src="./showcase/snet.mp4"></video>
-     </div>
-     
-     <div class="wrapper">
-       <h2>Your feedback</h2>
-       <div class="detail">
-         thank you for taking your time going through my website i will expect your feedback, this is sent to my email directly and i will reach you out 
-       
-           <input placeholder="Enter Your Phone Number" type="number">
-           <textarea placeholder="Your Message..." type="text"></textarea>
-           <button class="submit">Submit Message</button>
-       </div>
-     </div>
-     <div class="wrapper">
-       <h2>What I Want to study</h2>
-       <img src="./showcase/career.png" alt="">
-       actually am someone's with interest in both programming and electronics, 
-       i like to make circuit from scratch programm them and deploy them to control or automate system eg 
-       autonomous vehicles , ai , robots etc, so my best course is mechatronics engineering , but this isnt available
-       in under developed country like nigeria so i decided to choose <b>Computer engineering </b> which is also great alternative
-     </div>
-     <div class="wrapper">
-       <h2>Donation</h2>
-       your donation will really help, me , you can send me little as you want , i will appreciate it sir/mr <br><br>
-       <b>Account Number: 8145742404</b><br>
-       <b>Account Name: Abubakar Muhammad</b><br>
-       <b>Bank Name: Opay</b>
-     </div>
-     
- </main>
- <br><br>
- <footer>
-   <div class="wrapper">
-     <h3>Contacts</h3>
-     <br>
-     you can reach us below 
-     <a href="https://wa.me/08145742404">On WhatsApp</a>
-     <a href="tel:08145742404">Call Us</a>
-   </div>
-   <div class="copyright">
-     Stech @2025 Copyright
-   </div>
- </footer>
-
-  
-  
-  <script>
-    const $ = ele => ele.includes('*') ?
-  document.querySelectorAll(ele.replace('*', '')) :
-  document.querySelector(ele);
-    const wrappers = $('*.wrapper');
-    
-
- const inView = element => {
-   const rects = element.getBoundingClientRect();
-   return (rects.y  <= innerHeight && rects.y + rects.height >= 0 && rects.x + rects.width >= 0 && rects.x <= innerWidth)
- }
- 
- 
- const handlePoping = () => {
-   wrappers.forEach(wrapper => {
-     const video = wrapper.querySelector("video");
- 
-       if(inView(wrapper)){
-      wrapper.style.animationName = "popin" 
-    
-     if(video) video.play()
-         }else{
-         wrapper.style.animationName = "popout" 
-  if(video) video.pause()
-       }
-     }
-   )
- }
- 
- document.body.addEventListener("scroll", handlePoping)
- 
- handlePoping()
- 
- // for email
- let phone;
- let message;
- const phoneInput = $('input');
- const textarea = $('textarea');
- const submitButton = $('.submit')
- phoneInput.oninput = () => {
-    phone = phoneInput.value.trim();
-   }
- textarea.oninput = () => {
-   message = textarea.value.trim()
- }
- 
- submitButton.onclick = () => {
-    if(!phone || !message){
-      alert("cannot submit empty phone or message")
-    }else{
-      const endpoint = "https://formspree.io/f/xwpvbwyv";
-      submitButton.disabled = true;
-      submitButton.textContent = "Submitting Form"
-      fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({phone,message})
-      }
-      ).then(res => res.json())
-      .then(data => {
-        alert("We Have Received Your Message Thank You For Submitting")
-        submitButton.disabled = false;
-      submitButton.textContent = "Submit Message"
-      }).catch(() => {
-        alert("Error Submitting Message, Check Your Connection Or Contact Help")
-      })
+  <main>
+    <!-- About Me -->
+    <section>
+      <h2>About Me</h2>
+      <p>I am a young Nigerian self-taught innovator passionate about coding, electronics, AI, automation, and mechatronics engineering. My vision is to make Africa developed through technology.</p>
+      <h3>Why I Created This</h3>
+      <p>To showcase my skills, connect with like-minded individuals, get support, and learn more.</p>
       
-    }
-   }
- 
- // service worker 
- navigator.serviceWorker.register("/worker.js")
- .then(console.log)
+  
+  <div class="card journey">
+        <h3>My Tech Journey 👨‍💻🛰️</h3>
+        <img src="./showcase/pic1.png" alt="">
+        <p>
+          ‎
+          
+‎
+‎I started my tech journey at age 14 I started exploring physical aspects 🛠️, making research and building electronics based projects, I have builded alot of prototype projects like e-cars 🚗, e-pumps , irrigation system 🌊 etc ,
+‎I switched to coding at 16 while I can't continue the technical aspect which is resource internsive and requires money 💰
+‎
+
+
+
+‎I started coding in 2024 👩‍💻, with my phone 📱 I thought myself full stack web development and builded many projects from pwa apps to website and games, watching tutorials making research and practicing what I have learned day by day📓
+‎
+‎I learned frontend development in 2024, and in 2025 I started exploring backend development, Currently I have covered alot about full stack development and am building Fullstack projects to enhance my skills
+‎
+‎MY STACK
+‎FRONTEND: HTML, Css, and JavaScript
+‎BACKEND: nodejs, expressjs, and mongodb
+‎Other: redis, socket.io, web security etc
+‎
+‎
+‎throughout the journey I have faced alot of challenges,
+‎I split my phone screen to code ( terminal + code editor ) , switching between editors, servers crashing, frameworks not supported etc,
+‎
+‎despite the challenges I didn't give up,
+‎I was always inspired and fueled by my passion and faith
+‎
+‎though my interest for coding isn't just about building apps or website, is about programming the physical tools I builded , which still requires resources I don't yet have
+‎
+‎whenever I feel like giving up, I try to remind myself why I started and the lost when I gave up
+‎
+‎my vision is to make Africa a developed place expecially Nigeria , promote techs , provide startups, produce our own resources not relying on others, and also providing innovative solutions to human problems bringing new inventions to the world , which will highly reduce cost of living in the whole country ,
+‎🌍
+‎
+‎let's connect hands and unite together to bring promotions and impact to our country and the world as whole , knowledge are hidden in brains of untapped minds , but no support to proof 🤝
+‎
+‎🎯 my dream is to become a full mechatronics engineer and person with deep knowledge in tech, who can solve people's problem by utilizing his knowledge, bringing new innovations to the world
+‎
+‎there are alot In tech I like to explore , like ai, cybersecurity, embedded system , etc but resources don't permit, which will learn. later ❤️
+‎
+‎I have alot to tell , but this is short about me ,
+‎
+‎am looking forward to connect with like minded peoples, 📍If you’re in Maiduguri or anywhere in Nigeria, let’s connect and grow together.
+‎
+‎Current age: 17
+‎Motivation: You can do anything done by humans like you — if you stay dedicated.
+‎Eager for: Knowledge , research
+‎Aura: Imagine , research, build, code. tech.
+‎Challenges: Good Pc, Resource Fund
+
+hoping soon everything will get well and archive my dream
+‎
+        </p>
+      </div>
+      
+    </section>
+   
     
+
+    <!-- Electromechanical Projects -->
+    <section>
+      <h2>Electromechanical Projects - Small</h2>
+      <div class="card">
+        <h3>Water Pump</h3>
+        <img src="./showcase/pump.png" alt="DC Water Pump Project">
+        <p>Low-voltage pump to help farmers access water, powered by car battery or solar panel.</p>
+      </div>
+      <div class="card">
+        <h3>Excavator</h3>
+        <img src="./showcase/escavator.png" alt="DC Excavator Project">
+        <p>DC-powered excavator for easy transportation of heavy materials.</p>
+      </div>
+      <div class="card">
+        <h3>Water Level Indicator</h3>
+        <video controls src="./showcase/level_indicator.mp4" alt=""></video>
+        <p>
+         this measures level of water, usefull for water monitoring system , this can indicate when a tank or river is full
+       , this feel blurry because i did this years ago
+       </p>
+      </div>
+      <div class="card">
+        <h3>Walking Car</h3>
+        <video controls src="./showcase/walking_car.mp4"></video>
+        <p>Fun project demonstrating potential for local e-car production.</p>
+      </div>
+    </section>
+
+    <!-- Programming Projects -->
+    <section>
+      <h2>Programming Projects</h2>
+      <div class="card">
+        <img src="./showcase/s-post.png" alt="">
+        <h3>S'post 🌍</h3>
+        <p>
+          a small secure fast public posting app that allow users to make post react and more <br>
+        </p>
+        <p>
+         <a href="https://s-post-server.vercel.app">view app</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <img src="./showcase/weather.png" alt="Weather App Screenshot">
+      <p>
+        app that allow peoples to view weather of any places, forecast, wind direction and more weather data
+      </p>
+        <p><a href="https://sadiqdev-stack.github.io/Weather-App/">View App</a></p>
+      </div>
+      <div class="card">
+        <h3>Space Game</h3>
+        <img src="./showcase/game.png" alt="Space Game Screenshot">
+        <p>
+          game with many levels and space enemies + boss , fully functional
+        </p>
+        <p><a href="https://space-shooter-game-psi.vercel.app/">View App</a></p>
+      </div>
+      
+      <div class="card">
+        <h3>Quiz App</h3>
+        <img src="./showcase/quiz.png" alt="quiz app image">
+        <p>
+          app that allows users to take quizes with different subject in different field like arts, scince commercial etc
+        </p>
+        <p>
+          <a href="https://quiz-app-tau-blue.vercel.app/">View App</a>
+        </p>
+      </div>
+      
+      <div class="card">
+        <h3>Image Generator</h3>
+        <img src="./showcase/image.png" alt="image generator app image">
+        <p>
+          App that generate random images for diffirent use cases like wallpapers, nature and more 
+        </p>
+        <p>
+          <a href="https://sadiqdev-stack.github.io/Image-Generator-App/">View App</a>
+        </p>
+      </div>
+    
+    
+    </section>
+
+
+    <section>
+      <h2>Send Feedback</h2>
+      <form>
+        <input type="tel" placeholder="Enter your phone number" required>
+        <textarea placeholder="Your message..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <!-- Career & Donations -->
+    <section>
+      <h2>What I Am Learning</h2>
+      <p>Programming, electronics, Mechatronics Engineering or Computer Engineering.</p>
+      <img src="./showcase/career.png" alt="">
+      <h2>Donation</h2>
+      <p>this can help me in building projects:</p>
+      <p>
+        <b>Account Number:</b> 8145742404<br>
+        <b>Account Name:</b> Abubakar Muhammad<br>
+        <b>Bank Name:</b> Opay
+      </p>
+    </section>
+    
+    
+    <section class="imageSection">
+      <h2>My Images</h2>
+      <div class="images">
+        <img src="./showcase/pic1.png" alt="">
+        <img src="./showcase/pic2.png" alt="">
+        <img src="./showcase/pic3.png" alt="">
+        <img src="./showcase/me.png" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    
+    
+    <h3>Contact - Social Media Handles</h3>
+    <p>
+      here you can connect with me on my social media accounts and other platforms where i share my journey and projects
+    </p>
+    <a href="https://wa.me/08145742404">WhatsApp</a>
+    <a href="https://www.facebook.com/profile.php?id=100085838598957yy">Facebook</a>
+    <a href="https://github.com/sadiqdev-stack">Github</a>
+    <p>Stech, Released At ©2025</p>
+  </footer>
+
+  <script>
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+
+    // Feedback Form Submission
+    const form = document.querySelector('form');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const phone = form.querySelector('input').value.trim();
+      const message = form.querySelector('textarea').value.trim();
+      if (!phone || !message) return alert('Phone or message cannot be empty');
+
+      try {
+        const res = await fetch('https://formspree.io/f/xwpvbwyv', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ phone, message })
+        });
+        alert('Message received! Thank you.');
+        form.reset();
+      } catch {
+        alert('Error submitting message. Check your connection.');
+      }
+    });
+
+    // Optional: Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/worker.js').then(console.log);
+    }
   </script>
 </body>
 
-       </html>
+</html>
