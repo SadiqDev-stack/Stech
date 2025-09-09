@@ -10,67 +10,98 @@
 
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/all.png</image:loc>
-      <image:title>All Projects Showcase</image:title>
+      <image:title>Stech Projects Showcase – Sadiq Cyber</image:title>
+      <image:caption>All projects by Sadiq Abubakar (Sadiq Cyber) under Stech</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/career.png</image:loc>
-      <image:title>Career Growth</image:title>
+      <image:title>Sadiq Abubakar Career Vision – Stech</image:title>
+      <image:caption>Career journey of Sadiq Cyber, founder of Stech</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/coding.png</image:loc>
-      <image:title>Coding Journey</image:title>
+      <image:title>Coding Project by Sadiq Cyber</image:title>
+      <image:caption>Sadiq Abubakar coding a project for Stech</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/escavator.png</image:loc>
-      <image:title>Excavator Project</image:title>
+      <image:title>Mechatronics Excavator – Sadiq Abubakar</image:title>
+      <image:caption>Excavator project built by Sadiq Cyber (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/game.png</image:loc>
-      <image:title>Game Development</image:title>
+      <image:title>Game Development – Sadiq Cyber</image:title>
+      <image:caption>Game project created by Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/icon.png</image:loc>
-      <image:title>Site Icon</image:title>
+      <image:title>Stech Icon Logo</image:title>
+      <image:caption>Official icon of Stech by Sadiq Cyber</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/image.png</image:loc>
-      <image:title>Sample Image</image:title>
+      <image:title>Innovation Image – Sadiq Cyber</image:title>
+      <image:caption>Innovation project showcase by Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/me.png</image:loc>
-      <image:title>Sadiq Abubakar</image:title>
+      <image:title>Sadiq Abubakar – Sadiq Cyber</image:title>
+      <image:caption>Portrait of Sadiq Cyber, founder of Stech</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/pic1.png</image:loc>
-      <image:title>Picture 1</image:title>
+      <image:title>Sadiq Cyber Project Picture 1</image:title>
+      <image:caption>Project showcase image of Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/pic2.png</image:loc>
-      <image:title>Picture 2</image:title>
+      <image:title>Sadiq Cyber Project Picture 2</image:title>
+      <image:caption>Another project showcase of Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/pic3.png</image:loc>
-      <image:title>Picture 3</image:title>
+      <image:title>Sadiq Cyber Project Picture 3</image:title>
+      <image:caption>Innovation work by Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/profile.png</image:loc>
-      <image:title>Profile Picture</image:title>
+      <image:title>Profile Picture – Sadiq Abubakar (Sadiq Cyber)</image:title>
+      <image:caption>Profile of Sadiq Cyber, founder of Stech</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/pump.png</image:loc>
-      <image:title>Pump Project</image:title>
+      <image:title>Pump Project – Stech</image:title>
+      <image:caption>Pump project created by Sadiq Abubakar (Sadiq Cyber)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/quiz.png</image:loc>
-      <image:title>Quiz App</image:title>
+      <image:title>Quiz App by Sadiq Cyber</image:title>
+      <image:caption>Quiz application developed by Sadiq Abubakar (Stech)</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/s-post.png</image:loc>
-      <image:title>Social Post</image:title>
+      <image:title>Stech Social Post</image:title>
+      <image:caption>Social media post design by Sadiq Cyber</image:caption>
     </image:image>
+
     <image:image>
       <image:loc>https://stech-phi.vercel.app/showcase/weather.png</image:loc>
-      <image:title>Weather App</image:title>
+      <image:title>Weather App – Sadiq Cyber</image:title>
+      <image:caption>Weather app project created by Sadiq Abubakar (Stech)</image:caption>
     </image:image>
   </url>
 </urlset>
