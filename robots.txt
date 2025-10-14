@@ -1,4 +1,19 @@
+
+Allow all user agents
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap
 Sitemap: https://stech-phi.vercel.app/sitemap.xml
